@@ -1,0 +1,379 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background: #131313;
+    height: 200vh;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-x: hidden;
+    margin: 0;
+}
+
+.genders a, button {
+    font-weight: 500;
+    font-size: 16px;
+    color: #1883A5;
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
+}
+
+.genders :hover {
+   color:white
+}
+
+a, li {
+    color: #131313;
+    list-style: none;
+    text-decoration: none;
+}
+
+hr{
+        height: 1px;
+        background-color: #1883A5;
+        border: none;
+        width: 100% 
+}
+
+.button {
+    padding: 9px 25px;
+    background-color: #1883A5;
+    border: none;
+    border-radius: 50px;
+    color: #131313;
+    margin-top: 5%;
+    cursor: pointer;
+}
+
+.button2 {
+    padding: 15px 35px;
+    background-color: #1883A5;
+    border: none;
+    border-radius: 50px;
+    color: #131313;
+    cursor: pointer;
+    float: right;
+    margin-right: 27%;
+    margin-top: 1%;
+}
+
+.logo {
+    width: 20%;
+    cursor: pointer;
+    margin-left: 30%;
+}
+
+.basket-item {
+    color: white
+}
+
+@media (max-width: 768px) {
+    .logo {
+        width: 30%;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        width: 50%;
+    }
+}
+
+nav,
+#menu-checkbox {
+    display: none;
+}
+
+#menu-checkbox:checked ~ nav {
+    display: block;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    background: #131313;
+    color: #fff;
+    padding: 10px;
+}
+
+nav {
+    position: absolute;
+    background: #131313;
+    margin-top: 1%;
+}
+
+nav a {
+    display: block;
+    padding: 10px 20px;
+}
+
+.item-container {
+    max-width: 100%;
+    max-height: 100%;
+    position: relative;
+    overflow: hidden;
+    margin: 20px;
+}
+
+.item-container img,
+.item-container .description {
+    max-width: 100%;
+    height: auto;
+}
+
+.item-container .description {
+    position: absolute;
+    right: 35%;
+    top: 38%;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    width: 90%;
+    border-radius: 10px;
+}
+
+.hr2 {
+    margin: 10px auto;
+    width: 18%;
+}
+
+.rain-jacket {
+    max-width: 100%;
+    width: 10%;
+    float: left;
+    margin-right: 11%;
+    margin-top: 10%;
+    border: 1px solid white;
+    padding: 10px;
+    padding-right: 16%;  
+}
+
+.product-amount {
+    margin-top: 1%;
+    margin-left: 40%;
+}
+
+.product-total {
+    margin-top:  1%;
+    margin-left: 50%;
+}
+
+.shipping-fee {
+    margin-top: 3%;
+    margin-left: 40%;
+}
+
+.shipping-fee-total {
+    margin-top: 3%;
+    margin-left: 50%;
+} 
+
+.total {
+    margin-top: 6%;
+    margin-left: 40%;
+}
+
+.total-amount {
+    margin-top: 6%;
+    margin-left: 50%;
+}
+
+.product-amount,
+.product-total,
+.shipping-fee,
+.shipping-fee-total,
+.total,
+.total-amount {
+    position: absolute;
+    font-size: 20px;
+}
+
+.container {
+    float: right;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding:25px;
+    max-width: 100%;
+    padding-bottom: 70px;
+    background: #131313;
+    margin-top: -15%;  
+    width: 50%; 
+}
+
+.container form{  
+    padding: 50px;
+    max-width: 100%;
+    width: 80%;
+    background: white;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+}
+
+.container form .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.container form .row .col{
+    flex: 1 1 250px;
+}
+
+.container form .row .col .title{
+    font-size: 20px;
+    color: #131313;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.container form .row .col .inputBox{
+    margin: 15px 0;
+}
+
+.container form .row .col .inputBox span{
+    margin-bottom: 10px;
+    display: block;
+}
+
+.container form .row .col .inputBox input{
+    width: 100%;
+    border:1px solid #131313;
+    padding: 10px 15px;
+    font-size: 15px;
+    text-transform: none;
+}
+
+.container form .row .col .inputBox input:focus{
+    border:1px solid #131313
+}
+
+@media (min-width: 600px){
+    nav {
+        display: block;
+        position: static;
+    }
+    .hamburger-icon {
+        display: none;
+    }
+
+    nav a {
+        display: inline-block;
+        margin-top: 5%;
+    }
+}
+
+footer {
+    background-color: #1883A5;
+    margin-top: auto;    
+}
+
+.footerNav {
+    list-style: none;   
+}
+
+.footerNav h1{
+    color: #131313;
+}
+
+.footerContainer {
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.socialIcons {
+    display: flex;
+    justify-content: center;  
+}
+
+.socialIcons a {
+    text-decoration: none;
+    padding: 10px;
+    background-color: #131313;
+    margin: 1%;
+    border-radius: 50%;
+}
+
+.socialIcons i{
+    font-size: 2em;
+    color: #1883A5;
+    opacity: 0.9; 
+}
+
+.questions {
+    text-align: center;
+    text-decoration: none;
+    list-style: none;
+    color: #131313;
+    margin-top: -10%;
+    padding: 10px;  
+}
+
+li {
+    font-size: 20px;
+    padding: 5px;   
+}
+
+h2 {
+    float: right;
+    margin-right: 15%;
+    margin-top: -13%;
+    font-size: 40px;
+}
+
+.logo2 {
+    width: 15%;
+    float: right;
+    margin-top: -7%;
+    margin-right: 10%;
+}
+
+.about {
+    cursor: pointer;
+}
+
+.about a{
+    color: #131313;
+}
+
+@media (max-width: 480px) {
+    .logo2 {
+        width: 35%;
+        margin-top: 5%;
+        margin-right: 20%;
+    }
+    .socialIcons {
+        margin-top: 5%;
+    }
+    .questions {
+        margin-top: 5%;
+    }
+    h2 {
+        margin-top: 5%;
+        margin-right: 0;
+    }
+    .footerNav {
+        margin-left: 30%;
+    }
+    .about {
+        margin-right: 5%;
+    }
+}
+
+@media (min-width:600px){
+    .footerNav{
+        flex-direction: column;
+    }
+    .footerNav ul li{
+        width: 100%;
+
+
+    }
+}

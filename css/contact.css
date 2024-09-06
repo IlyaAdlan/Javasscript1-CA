@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background: #131313;
+    height: 200vh;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-x: hidden;
+    margin: 0;
+}
+
+.genders a, button {
+    font-weight: 500;
+    font-size: 16px;
+    color: #1883A5;
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
+}
+
+.genders :hover {
+   color:white
+}
+
+a, li {
+    color: #131313;
+    list-style: none;
+    text-decoration: none;
+}
+
+hr{
+        height: 1px;
+        background-color: #1883A5;
+        border: none;
+        width: 100% 
+}
+
+.button {
+    padding: 9px 25px;
+    background-color: #1883A5;
+    border: none;
+    border-radius: 50px;
+    color: #131313;
+    margin-top: 5%;
+    cursor: pointer;
+}
+
+.logo {
+    width: 20%;
+    cursor: pointer;
+    margin-left: 30%;
+}
+
+@media (max-width: 768px) {
+    .logo {
+        width: 30%;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        width: 50%;
+    }
+}
+
+nav,
+#menu-checkbox {
+    display: none;
+}
+
+#menu-checkbox:checked ~ nav {
+    display: block;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    background: #131313;
+    color: #fff;
+    padding: 10px;
+}
+
+
+nav {
+    position: absolute;
+    background: #131313;
+    margin-top: 1%;
+}
+
+nav a {
+    display: block;
+    padding: 10px 20px;
+}
+
+.contact {
+    margin-right: auto;
+    margin-left: auto;
+    width: 50%;
+    color: #fff;
+    font-size: 30px;
+    text-align: justify;
+    text-align: center;
+}
+
+h2 {
+    color: #1883A5;   
+}
+
+.gallery-container {
+    border: 1px solid white;
+    display: flex;
+    padding: 10%;
+    justify-content: space-between;
+    margin: 10%;
+    flex-wrap: wrap;   
+}
+
+.description {
+    color: white;
+    border: 1px solid white;
+    text-align: center;
+    padding: 10%;
+    margin-top: 10%;
+}
+.chat {
+    max-width: 100%;
+    width: 100%;
+}
+
+.email {
+    margin-bottom: 4%;
+    width: 100%;
+    max-width: 100%;
+}
+
+.call {
+    width: 100%;
+    max-width: 100%;
+}
+
+.button-chat,
+.button-email,
+.button-phone {
+    padding: 9px 25px;
+    background-color: #1883A5;
+    border: none;
+    border-radius: 50px;
+    color: #131313;
+    cursor: pointer;
+}
+
+@media (min-width: 600px){
+    nav {
+        display: block;
+        position: static;
+    }
+    .hamburger-icon {
+        display: none;
+    }
+
+    nav a {
+        display: inline-block;
+        margin-top: 5%;
+    }
+}
+
+footer {
+    background-color: #1883A5;
+    margin-top: auto;    
+}
+
+.footerNav {
+    list-style: none;   
+}
+
+.footerNav h1{
+    color: #131313;
+}
+
+.footerContainer {
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.socialIcons {
+    display: flex;
+    justify-content: center;  
+}
+
+.socialIcons a {
+    text-decoration: none;
+    padding: 10px;
+    background-color: #131313;
+    margin: 1%;
+    border-radius: 50%;
+}
+
+.socialIcons i{
+    font-size: 2em;
+    color: #1883A5;
+    opacity: 0.9; 
+}
+
+.questions {
+    text-align: center;
+    text-decoration: none;
+    list-style: none;
+    color: #131313;
+    margin-top: -10%;
+    padding: 10px;   
+}
+
+li {
+    font-size: 20px;
+    padding: 5px;   
+}
+
+h2 {
+    float: right;
+    margin-right: 15%;
+    margin-top: -13%;
+    font-size: 40px;
+    color: #131313;
+}
+
+.logo2 {
+    width: 15%;
+    float: right;
+    margin-top: -7%;
+    margin-right: 10%;
+}
+
+.about {
+    cursor: pointer;
+}
+
+.about a{
+    color: #131313;
+}
+
+@media (max-width: 480px) {
+    .logo2 {
+        width: 35%;
+        margin-top: 5%;
+        margin-right: 20%;
+    }
+    .socialIcons {
+        margin-top: 5%;
+    }
+    .questions {
+        margin-top: 5%;
+    }
+    h2 {
+        margin-top: 5%;
+        margin-right: 0;
+    }
+    .footerNav {
+        margin-left: 30%;
+    }
+    .about {
+        margin-right: 5%;
+    }
+}
+
+@media (min-width:600px){
+    .footerNav{
+        flex-direction: column;
+    }
+    .footerNav ul li{
+        width: 100%;
+
+
+    }
+}
