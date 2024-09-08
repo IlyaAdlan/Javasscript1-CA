@@ -8,7 +8,9 @@ function loadBasket() {
         const basketItem = document.createElement('li')
         basketItem.classList.add('basket-item');
         basketItem.innerHTML = `
-        ${item.name}
+        <img src="${item.image}" alt="${item.name}" class="basket-images">
+        <span>${item.name}</span>
+        <span class="basket-price">${item.price}kr</span>
         <button onclick="removeFromBasket(${index})">Remove</button>
 
         `;

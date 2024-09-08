@@ -1,16 +1,19 @@
 let productsArray = [];
 
 async function fetchData() {
+  const loadingIndicator = document.getElementById('loading-indicator');
     try {
+      loadingIndicator.classList.remove('hidden')
+
         const response = await fetch('https://api.noroff.dev/api/v1/rainy-days');
         const data = await response.json();
         productsArray = data;
-        console.log('Fetched Products:', productsArray);
-
         displayProducts(productsArray);
     } catch (error) {
         console.error('Error fetching data:', error);
-    } 
+    }  finally {
+      loadingIndicator.classList.add('hidden')
+    }
  }
 
 function displayProducts(products) {
